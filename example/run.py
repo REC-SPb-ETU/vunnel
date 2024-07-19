@@ -33,7 +33,7 @@ def main():
     with mock.patch("awesome.parser.requests.get") as get:
         get.return_value = mock.Mock(
             json=lambda: fakedata,
-            text=orjson.dumps(fakedata),
+            content=orjson.dumps(fakedata),
             raise_for_status=lambda: None,
             status_code=200,
         )

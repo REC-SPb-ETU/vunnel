@@ -41,8 +41,8 @@ class Parser:
         r = requests.get(self._json_url_, timeout=self.download_timeout)
         r.raise_for_status()
 
-        with open(self.json_file_path, "w", encoding="utf-8") as f:
-            f.write(r.text)
+        with open(self.json_file_path, "wb") as f:
+            f.write(r.content)
 
     def _normalize(self):
 
