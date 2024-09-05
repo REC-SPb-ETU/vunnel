@@ -46,6 +46,7 @@ class Providers:
     amazon: providers.amazon.Config = field(default_factory=providers.amazon.Config)
     chainguard: providers.chainguard.Config = field(default_factory=providers.chainguard.Config)
     debian: providers.debian.Config = field(default_factory=providers.debian.Config)
+    fstec: providers.fstec.Config = field(default_factory=providers.fstec.Config)
     github: providers.github.Config = field(default_factory=providers.github.Config)
     mariner: providers.mariner.Config = field(default_factory=providers.mariner.Config)
     nvd: providers.nvd.Config = field(default_factory=providers.nvd.Config)
